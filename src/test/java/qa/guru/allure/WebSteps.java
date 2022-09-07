@@ -8,6 +8,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
@@ -38,8 +39,8 @@ public class WebSteps {
     }
 
     @Step("Проверяем наличие Issue с номером {issue}")
-    public void shouldSeeIssueWithNumber(int issue) {
-        $(withText("#" + issue)).should(Condition.exist);
+    public void shouldSeeIssueWithName(String name) {
+        $("#issue_1_link").shouldHave(text(name));
     }
 
     @Attachment(value = "Screenshot", type = "image/png", fileExtension = "png")

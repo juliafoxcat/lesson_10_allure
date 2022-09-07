@@ -15,12 +15,12 @@ public class IssueNameTest {
 
 
     @Test
-    @Feature("Issue в репозитории1")
-    @Story("Создание Issue1")
+    @Feature("Issue в репозитории без шагов")
+    @Story("Проверка имени Issue")
     @Owner("juliafoxcat")
     @Severity(SeverityLevel.BLOCKER)
     @Link(value = "Testing", url = "https://testing.github.com")
-    @DisplayName("Создание Issue для авторизованного пользователя1")
+    @DisplayName("Поиск репозитория и его Issue")
     public void testIssueSearch() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 

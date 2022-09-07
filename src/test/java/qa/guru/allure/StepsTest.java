@@ -20,12 +20,12 @@ public class StepsTest {
     private static final String NAME = "Test issue name";
 
     @Test
-    @Feature("Issue в репозитории2")
-    @Story("Создание Issue2")
+    @Feature("Issue в репозитории с шагами внутри теста")
+    @Story("Проверка имени Issue")
     @Owner("juliafoxcat")
     @Severity(SeverityLevel.BLOCKER)
     @Link(value = "Testing", url = "https://testing.github.com")
-    @DisplayName("Создание Issue для авторизованного пользователя2")
+    @DisplayName("Поиск репозитория и его Issue")
     public void testLambdaStep() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
@@ -49,12 +49,12 @@ public class StepsTest {
     }
 
     @Test
-    @Feature("Issue в репозитории3")
-    @Story("Создание Issue3")
+    @Feature("Issue в репозитории c помощью WebSteps")
+    @Story("Проверка имени Issue")
     @Owner("juliafoxcat")
     @Severity(SeverityLevel.BLOCKER)
     @Link(value = "Testing", url = "https://testing.github.com")
-    @DisplayName("Создание Issue для авторизованного пользователя3")
+    @DisplayName("Поиск репозитория и его Issue")
     public void testAnnotatedStep() {
         SelenideLogger.addListener("allure", new AllureSelenide());
         WebSteps steps = new WebSteps();

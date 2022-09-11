@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Sep 11 13:56:15 GMT 2022","Sun Sep 11 13:56:24 GMT 2022","8990","","qa.guru.allure.IssueNameTest","","qa.guru.allure.IssueNameTest","testIssueSearch","Поиск репозитория и его Issue",""
+"passed","Sun Sep 11 13:56:27 GMT 2022","Sun Sep 11 13:56:33 GMT 2022","5334","","qa.guru.allure.StepsTest","","qa.guru.allure.StepsTest","testLambdaStep","Поиск репозитория и его Issue",""
+"passed","Sun Sep 11 13:56:24 GMT 2022","Sun Sep 11 13:56:27 GMT 2022","2835","","qa.guru.allure.StepsTest","","qa.guru.allure.StepsTest","testAnnotatedStep","Поиск репозитория и его Issue",""
